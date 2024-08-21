@@ -1,0 +1,75 @@
+{
+  "ShowHidden": false,
+  "ShowAllFiles": false,
+  "Name": "$project-name$",
+  "ProjectSettings": [
+    {
+      "Name": "base-id",
+      "Value": "$base-id$"
+    },
+    {
+      "Name": "project-name",
+      "Value": "$project-name$"
+    }
+  ],
+  "ProjectTranspilers": [
+    {
+      "MatchedTranspiler": {
+        "Name": "AirtableToODXML",
+        "Description": "Airtable to Odxml"
+      },
+      "IsSSoTTranspiler": true,
+      "Name": "AirtableToODXML",
+      "RelativePath": "/ODXML",
+      "TranspilerGroup": "ssot",
+      "CommandLine": "airtable/airtable-to-odxml "
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "AirtableToJson",
+        "Description": "Export an Airtable Base as json"
+      },
+      "IsSSoTTranspiler": true,
+      "Name": "AirtableToJson",
+      "RelativePath": "/SSoT",
+      "CommandLine": "airtable/airtable-to-json -p baseId=$base-id$ -p entities=Widgets,Companies -p view=Grid%20view -p include-id-and-createdtime=false -p doublenest=false",
+      "TranspilerGroup": "ssot",
+      "IsDisabled": true
+    },
+    {
+        "MatchedTranspiler": {
+            "Name": "Invoke a local command",
+            "Description": "Export an Airtable Base as json"
+        },
+        "IsSSoTTranspiler": true,
+        "Name": "CreateReadme",
+        "RelativePath": "/SSoT",
+        "CommandLine": "-exec cmd\\ /c\\ create-readme.ps1",
+        "TranspilerGroup": "ssot",
+        "IsDisabled": true
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "AirtableToJson",
+        "Description": "Export an Airtable Base as json"
+      },
+      "IsSSoTTranspiler": true,
+      "Name": "AirtableToJson",
+      "RelativePath": "/SSoT",
+      "CommandLine": "airtable/airtable-to-json -p baseId=$base-id$ -p entities=$entities$ -p view=$view$",
+      "TranspilerGroup": "ssot",
+      "IsDisabled": true
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "ODXMLToSMQL",
+        "Description": "Extracts the roles and CRUD permissions from an ODXML file, and builds a matching SMQL file from those results."
+      },
+      "IsSSoTTranspiler": false,
+      "Name": "ODXMLToSMQL",
+      "RelativePath": "/SMQL",
+      "CommandLine": "odxml-to-smql -i ../ODXML/DataSchema.odxml",
+      "IsDisabled": true
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "ssotme-seed",
+  "version": "1.0.0",
+  "description": "Seed project for SSoT.me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "replacements": [
+    {
+      "find-text": "$base-id$",
+      "default-replacement-text": "appF5XTR7XzrfTgqs",
+      "description": "The base ID of the Airtable base",
+      "replacement-text": null
+    },
+    {
+      "find-text": "$entities$",
+      "default-replacement-text": "",
+      "description": "Enter A comma separated list of tables from the airtable if you want to export them as json.",
+      "replacement-text": null
+    },
+    {
+      "find-text": "$view$",
+      "default-replacement-text": "Grid%20view",
+      "description": "Enter the name of a View to use for that export.  Grid%20view is the default.",
+      "replacement-text": null
+    },
+    {
+      "find-text": "$openai-api-key$",
+      "default-replacement-text": "default-openai-api-key",
+      "description": "Enter your openai.com if you want to have the README.md automatically update itself.",
+      "replacement-text": null      
+    },
+    {
+      "find-text": "$project-name$",
+      "default-replacement-text": "tictactoe",
+      "description": "A lowercase name of the project",
+      "replacement-text": null
+    },
+    {
+      "find-text": "$project-name-title$",
+      "default-replacement-text": "Tic Tac Toe",
+      "description": "A title of the project",
+      "replacement-text": null
+    }
+  ],
+  "requires-replacements": true
+}

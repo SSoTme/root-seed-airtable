@@ -18,6 +18,12 @@
       "replacement-text": null
     },
     {
+      "find-text": "$openai-api-key$",
+      "default-replacement-text": "default-openai-api-key",
+      "description": "Enter your openai.com if you want to have the README.md automatically update itself.",
+      "replacement-text": null      
+    },
+    {
       "find-text": "$project-name$",
       "default-replacement-text": "tictactoe",
       "description": "A lowercase name of the project",

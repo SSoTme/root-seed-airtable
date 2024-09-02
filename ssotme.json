@@ -21,8 +21,8 @@
       "IsSSoTTranspiler": true,
       "Name": "AirtableToODXML",
       "RelativePath": "/ODXML",
-      "TranspilerGroup": "ssot",
-      "CommandLine": "airtable/airtable-to-odxml "
+      "CommandLine": "airtable/airtable-to-odxml ",
+      "TranspilerGroup": "ssot"
     },
     {
       "MatchedTranspiler": {
@@ -32,33 +32,21 @@
       "IsSSoTTranspiler": true,
       "Name": "AirtableToJson",
       "RelativePath": "/SSoT",
-      "CommandLine": "airtable/airtable-to-json -p baseId=$base-id$ -p entities=Widgets,Companies -p view=Grid%20view -p include-id-and-createdtime=false -p doublenest=false",
-      "TranspilerGroup": "ssot",
-      "IsDisabled": true
-    },
-    {
-        "MatchedTranspiler": {
-            "Name": "Invoke a local command",
-            "Description": "Export an Airtable Base as json"
-        },
-        "IsSSoTTranspiler": true,
-        "Name": "CreateReadme",
-        "RelativePath": "/SSoT",
-        "CommandLine": "-exec cmd\\ /c\\ create-readme.ps1",
-        "TranspilerGroup": "ssot",
-        "IsDisabled": true
+      "CommandLine": "airtable/airtable-to-json -p baseId=$base-id$ -p entities=Entities,$entities$ -p view=$view$ -p includeIdAndCreatedTime=false -p doubleNest=false -p simplifyAirtableAttachments=true",
+      "IsDisabled": true,
+      "TranspilerGroup": "ssot"
     },
     {
       "MatchedTranspiler": {
-        "Name": "AirtableToJson",
+        "Name": "Invoke a local command",
         "Description": "Export an Airtable Base as json"
       },
       "IsSSoTTranspiler": true,
-      "Name": "AirtableToJson",
+      "Name": "CreateReadme",
       "RelativePath": "/SSoT",
-      "CommandLine": "airtable/airtable-to-json -p baseId=$base-id$ -p entities=$entities$ -p view=$view$",
-      "TranspilerGroup": "ssot",
-      "IsDisabled": true
+      "CommandLine": "-exec cmd\\ /c\\ create-readme.ps1 -w 300000",
+      "IsDisabled": true,
+      "TranspilerGroup": "ssot"
     },
     {
       "MatchedTranspiler": {

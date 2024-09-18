@@ -11,42 +11,101 @@
     "url": "git"
   },
   "replacements": [
+   
     {
-      "find-text": "$base-id$",
-      "default-replacement-text": "appF5XTR7XzrfTgqs",
+      "key": "base-id",
+      "find-text": "appF5XTR7XzrfTgqs",
+      "default": "appF5XTR7XzrfTgqs",
       "description": "The base ID of the Airtable base",
-      "replacement-text": null
+      "secret": false,
+      "required": true
     },
     {
-      "find-text": "$entities$",
-      "default-replacement-text": "",
-      "description": "Enter A comma separated list of tables from the airtable if you want to export them as json.",
-      "replacement-text": null
-    },
-    {
-      "find-text": "$view$",
-      "default-replacement-text": "Grid%20view",
-      "description": "Enter the name of a View to use for that export.  Grid%20view is the default.",
-      "replacement-text": null
-    },
-    {
-      "find-text": "$openai-api-key$",
-      "default-replacement-text": "default-openai-api-key",
-      "description": "Enter your openai.com if you want to have the README.md automatically update itself.",
-      "replacement-text": null
-    },
-    {
-      "find-text": "$project-name$",
-      "default-replacement-text": "tictactoe",
+      "key": "project-name",
+      "find-text": "ej-tictactoe-demo",
+      "default": "ej-tictactoe-demo",
+      "airtable-hint": "project-name-token",
       "description": "A lowercase name of the project",
-      "replacement-text": null
+      "secret": false,
+      "required": true
     },
     {
-      "find-text": "$project-name-title$",
-      "default-replacement-text": "Tic Tac Toe",
+      "key": "project-name-title",
+      "find-text": "Tic Tac Toe Demo",
+      "default": "Tic Tac Toe Demo",
+      "airtable-hint": "project-name",
       "description": "A title of the project",
-      "replacement-text": null
+      "secret": false,
+      "required": true
+    },
+    {
+      "key": "entities",
+      "find-text": "AppUsers,Players",
+      "airtable-hint": "table-names",
+      "default": "AppUsers,Players",
+      "description": "Enter a comma-separated list of tables from the Airtable if you want to export them as JSON.",
+      "secret": false,
+      "required": true
+    },
+    {
+      "key": "view",
+      "find-text": "Grid%20view",
+      "airtable-hint": "default-view",
+      "default": "Grid%20view",
+      "description": "Enter the name of a View to use for that export. Grid view is the default.",
+      "secret": false,
+      "required": false
+    },
+    {
+      "key": "user-table-name",
+      "find-text": "AppUser",
+      "default": "AppUser",
+      "description": "The name of the User Table.",
+      "secret": false,
+      "required": false
+    },
+    {
+      "key": "users-table-name",
+      "find-text": "AppUsers",
+      "default": "AppUsers",
+      "description": "The name of the Users Table (plural).",
+      "secret": false,
+      "required": false
+    },
+    {
+      "key": "email-address-field",
+      "find-text": "EmailAddress",
+      "default": "EmailAddress",
+      "description": "The name of the field in the users table.",
+      "secret": false,
+      "required": false
+    },
+    {
+      "key": "roles-field",
+      "find-text": "Roles",
+      "default": "Roles",
+      "description": "The name of the roles field in the users table.",
+      "secret": false,
+      "required": false
+    },
+    {
+      "key": "roles",
+      "find-text": "Guest,User,Admin",
+      "airtable-hint": "app-user-roles",
+      "default": "Guest,User,Admin",
+      "description": "The roles that the REST API includes.",
+      "secret": false,
+      "required": false
+    },
+    {
+      "key": "user-role-name",
+      "find-text": "User",
+      "airtable-hint": "non-guest-admin-role",
+      "default": "User",
+      "description": "The name of the standard role for a User in the users table.",
+      "secret": false,
+      "required": false
     }
   ],
-  "requires-replacements": true
+  "requires-replacements": false
 }

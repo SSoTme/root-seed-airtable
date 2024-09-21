@@ -1,15 +1,74 @@
 {
   "ShowHidden": false,
   "ShowAllFiles": false,
-  "Name": "$project-name$",
   "ProjectSettings": [
-    {
-      "Name": "base-id",
-      "Value": "$base-id$"
-    },
     {
       "Name": "project-name",
       "Value": "$project-name$"
+    },
+    {
+      "Name": "project-name-title",
+      "Value": "$project-name-title$"
+    },
+    {
+      "Name": "baseId",
+      "Value": "$base-id$"
+    },
+    {
+      "Name": "actors",
+      "Value": "$roles$"
+    },
+    {
+      "Name": "include-load-methods",
+      "Value": "false"
+    },
+    {
+      "Name": "init-lists",
+      "Value": "false"
+    },
+    {
+      "Name": "legacy",
+      "Value": "false"
+    },
+    {
+      "Name": "user-name",
+      "Value": "$user-role-name$"
+    },
+    {
+      "Name": "email-address-name",
+      "Value": "$email-address-field$"
+    },
+    {
+      "Name": "role-name",
+      "Value": "$roles-field$"
+    },
+    {
+      "Name": "crud-coordinator",
+      "Value": "CRUDCoordinator"
+    },
+    {
+      "Name": "serialize-to-original-names",
+      "Value": "true"
+    },
+    {
+      "Name": "make-fks-collections",
+      "Value": "true"
+    },
+    {
+      "Name": "list-suffix",
+      "Value": "Expanded"
+    },
+    {
+      "Name": "jwt-build-command",
+      "Value": "Encode"
+    },
+    {
+      "Name": "dataclasses-namespace",
+      "Value": "AirtableDirect.CLI.Lib.DataClasses"
+    },
+    {
+      "Name": "mode",
+      "Value": "Split"
     }
   ],
   "ProjectTranspilers": [

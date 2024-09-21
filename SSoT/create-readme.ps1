@@ -29,10 +29,10 @@ function Post-Prompt {
     $body = @{
         key = $YourOpenAIApiKey
         parentMessageId = ""
-        prompt = "Ignore entities list meta data: " + $fileContent + 
+        systemMessage = "Ignore entities list meta data: " + $fileContent + 
                  "Please write a 1500 word narrative article (like a wiki page).  Don't truncate urls." +
                  "Avoid bullet lists.  Don't make stuff up like where to clone the project from.  You don't know that shit.: "
-        systemMessage = "You are a business analyst."
+        prompt = "answer the question."
         model = "gpt-4o"
         maxResponseTokens = 1500
     } | ConvertTo-Json

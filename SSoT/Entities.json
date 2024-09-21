@@ -1,0 +1,16 @@
+{
+  "Entities": [
+    {
+      "Name": "AppUser",
+      "PluralName": "AppUsers",
+      "AirtableName": "AppUsers",
+      "DisplayName": "App User"
+    },
+    {
+      "Name": "Cell",
+      "PluralName": "Cells",
+      "AirtableName": "Cells",
+      "DisplayName": "Cell"
+    }
+  ]
+}

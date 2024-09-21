@@ -1,4 +1,4 @@
-$YourOpenAIApiKey = "$openai-api-key$"
+$YourOpenAIApiKey = "$env:OPENAI_API_KEY"
 
 function Post-Prompt {
     param (

@@ -101,8 +101,7 @@
       "IsSSoTTranspiler": false,
       "Name": "ODXMLToSMQL",
       "RelativePath": "/SMQL",
-      "CommandLine": "odxml-to-smql -i ../ODXML/DataSchema.odxml",
-      "IsDisabled": true
+      "CommandLine": "odxml-to-smql -i ../ODXML/DataSchema.odxml"
     },
     {
       "MatchedTranspiler": {

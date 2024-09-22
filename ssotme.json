@@ -102,7 +102,7 @@
       "IsSSoTTranspiler": false,
       "Name": "ODXMLToEntitiesJson",
       "RelativePath": "/SSoT",
-      "CommandLine": "odxml-to-entities-json -i ..\\ODXML\\DataSchema.odxml"
+      "CommandLine": "odxml-to-entities-json -i ../ODXML/DataSchema.odxml"
     },
     {
       "MatchedTranspiler": {

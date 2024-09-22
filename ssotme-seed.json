@@ -24,7 +24,6 @@
       "key": "project-name",
       "find-text": "ej-tictactoe-demo",
       "default": "ej-tictactoe-demo",
-      "airtable-hint": "project-name-token",
       "description": "A lowercase name of the project",
       "secret": false,
       "required": true
@@ -33,24 +32,13 @@
       "key": "project-name-title",
       "find-text": "Tic Tac Toe Demo",
       "default": "Tic Tac Toe Demo",
-      "airtable-hint": "project-name",
       "description": "A title of the project",
-      "secret": false,
-      "required": true
-    },
-    {
-      "key": "entities",
-      "find-text": "AppUsers,Players",
-      "airtable-hint": "table-names",
-      "default": "AppUsers,Players",
-      "description": "Enter a comma-separated list of tables from the Airtable if you want to export them as JSON.",
       "secret": false,
       "required": true
     },
     {
       "key": "view",
       "find-text": "Grid%20view",
-      "airtable-hint": "default-view",
       "default": "Grid%20view",
       "description": "Enter the name of a View to use for that export. Grid view is the default.",
       "secret": false,
@@ -91,7 +79,6 @@
     {
       "key": "roles",
       "find-text": "Guest,User,Admin",
-      "airtable-hint": "app-user-roles",
       "default": "Guest,User,Admin",
       "description": "The roles that the REST API includes.",
       "secret": false,
@@ -100,7 +87,6 @@
     {
       "key": "user-role-name",
       "find-text": "User",
-      "airtable-hint": "non-guest-admin-role",
       "default": "User",
       "description": "The name of the standard role for a User in the users table.",
       "secret": false,

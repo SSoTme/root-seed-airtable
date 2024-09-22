@@ -15,7 +15,7 @@
       "Value": "$base-id$"
     },
     {
-      "Name": "actors",
+      "Name": "roles",
       "Value": "$roles$"
     },
     {
@@ -80,8 +80,18 @@
       "IsSSoTTranspiler": true,
       "Name": "AirtableToODXML",
       "RelativePath": "/ODXML",
-      "CommandLine": "airtable/airtable-to-odxml ",
+      "CommandLine": "airtable/airtable-to-odxml",
       "TranspilerGroup": "ssot"
+    },
+    {
+      "MatchedTranspiler": {
+        "Name": "ODXMLToEntitiesJson",
+        "Description": "ODXML to Entities Json"
+      },
+      "IsSSoTTranspiler": false,
+      "Name": "ODXMLToEntitiesJson",
+      "RelativePath": "/SSoT",
+      "CommandLine": "odxml-to-entities-json -i ../ODXML/DataSchema.odxml -i RoleBasedPermissions.csv"
     },
     {
       "MatchedTranspiler": {
@@ -93,16 +103,6 @@
       "RelativePath": "/SMQL",
       "CommandLine": "odxml-to-smql -i ../ODXML/DataSchema.odxml",
       "IsDisabled": true
-    },
-    {
-      "MatchedTranspiler": {
-        "Name": "ODXMLToEntitiesJson",
-        "Description": "ODXML to Entities Json"
-      },
-      "IsSSoTTranspiler": false,
-      "Name": "ODXMLToEntitiesJson",
-      "RelativePath": "/SSoT",
-      "CommandLine": "odxml-to-entities-json -i ../ODXML/DataSchema.odxml"
     },
     {
       "MatchedTranspiler": {

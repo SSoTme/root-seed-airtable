@@ -121,7 +121,7 @@
       },
       "IsSSoTTranspiler": true,
       "Name": "CreateReadme",
-      "RelativePath": "/SSoT",
+      "RelativePath": "/",
       "CommandLine": "-exec cmd\\ /c\\ create-readme.ps1 -w 300000",
       "IsDisabled": true,
       "TranspilerGroup": "ssot"

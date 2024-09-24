@@ -44,7 +44,11 @@ function Post-Prompt {
         $responseText = Invoke-RestMethod -Uri $uri -Method Post -Body $body -ContentType "application/json"
         Write-Host "Generated Text: $($responseText.text)"
 
-        $readmePath = Join-Path -Path $scriptPath -ChildPath "../README.md"
+        $readmePath = Join-Path -Path $scriptPath -ChildPath "README.md"
+        if (!$responseText.text.Contains("#")) {
+            $responseText.text = "#" + $responseText.text
+        }
+
         $headerIndex = $responseText.text.IndexOf('#')
         
         $readmeContent = $responseText.text.Insert($headerIndex, "`n<div style='width: 15em; float: right;'>`n`n![Inferred Project Logo](logo.png)`n`n</div>`n`n")

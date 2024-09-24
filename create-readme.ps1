@@ -6,7 +6,7 @@ function Post-Prompt {
     )
 
     if ("$filename" -eq "$null") {
-        $filename = "Airtable.json"
+        $filename = "SSoT/Airtable.json"
     }
     Write-Host "Creating README.md for file: $filename - $($MyInvocation.PSCommandPath) which has this script path: $scriptPath"
 
